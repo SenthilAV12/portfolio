@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: rgb(163, 228, 142);
+    padding-top: 40px;   /* SAME as navbar height */
+}
+
+
+
+a{
+    text-decoration: none;
+    color: rgb(57, 3, 3);
+}
+
+.navbar{
+    left: 0px;
+    top: opx;
+    position: fixed;
+    padding: 25px 9%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+     z-index: 100;
+}
+
+.navbar .logo{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    margin-left: 35px;
+    list-style: none;
+}
+
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 300;
+    transition:all .5s ease-out;
+}
+
+.navbar ul li a:hover,
+.navbar ul li.active a
+ {
+    color: rgb(71, 32, 87);
+   transform: scale(1.1);
+}
+
+
+.content{
+    background-color: rgb(107, 198, 145);
+    width: 60%;
+    margin: 220px auto;   
+    padding: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgb(9, 23, 10);
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+
+.content h1{
+    text-align: center;
+    margin: 15px;
+}
+
+.content:hover{
+    transform: scale(1.2);
+}
